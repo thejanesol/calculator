@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="output"></section>
+    <section id="display"></section>
+
+    <section id="calculator">
+        <section class="numbers">
+            <button id="one" value="1" onclick="showNumber(this)">1</button>
+            <button id="two" value="2" onclick="showNumber(this)">2</button>
+            <button id="three" value="3" onclick="showNumber(this)">3</button>
+            <button id="four" value="4" onclick="showNumber(this)">4</button>
+            <button Id="five" value="5" onclick="showNumber(this)">5</button>
+            <button id="six" value="6" onclick="showNumber(this)">6</button>
+            <button id="seven" value="7" onclick="showNumber(this)">7</button>
+            <button id="eight" value="8" onclick="showNumber(this)">8</button>
+            <button id="nine" value="9" onclick="showNumber(this)">9</button>
+            <button id="zero" value="0" onclick="showNumber(this)">0</button>
+            <button value="." id="decimal" onclick="showNumber(this)">.</button>
+        </section>
+
+        <section class="operators">
+            <button id="clear" onclick="allClear()">AC</button>
+            <button id="add" value="+" onclick="showOperator(this)">+</button>
+            <button id="subtract" value="-" onclick="showOperator(this)">-</button>
+            <button id="multiply" value="*" onclick="showOperator(this)">*</button>
+            <button id="divide" value="/" onclick="showOperator(this)">/</button>
+            <button id="equals" onclick="showResult()">=</button>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
